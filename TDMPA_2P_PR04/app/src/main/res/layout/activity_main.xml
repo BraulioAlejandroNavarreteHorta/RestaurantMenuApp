@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondomenu" />
+
+    <ImageButton
+        android:id="@+id/btnMinusRefresco"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        app:srcCompat="@drawable/minus_circle" />
+
+    <ImageButton
+        android:id="@+id/btnMinusPollo"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/minus_circle" />
+
+    <ImageButton
+        android:id="@+id/btnPlusPollo"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/plus_circle" />
+
+    <ImageButton
+        android:id="@+id/btnPlusRefresco"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089"
+        app:srcCompat="@drawable/plus_circle" />
+
+    <TextView
+        android:id="@+id/txtCantidadRefresco"
+        android:layout_width="34dp"
+        android:layout_height="41dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/txtCantidadPollo"
+        android:layout_width="34dp"
+        android:layout_height="41dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <TextView
+        android:id="@+id/txtCantidadHamburguesa"
+        android:layout_width="34dp"
+        android:layout_height="41dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <ImageButton
+        android:id="@+id/btnPlusHamburguesa"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267"
+        app:srcCompat="@drawable/plus_circle" />
+
+    <ImageButton
+        android:id="@+id/btnMinusHamburguesa"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267"
+        app:srcCompat="@drawable/minus_circle" />
+
+    <ImageButton
+        android:id="@+id/btnMinusPasta"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352"
+        app:srcCompat="@drawable/minus_circle" />
+
+    <TextView
+        android:id="@+id/txtCantidadPasta"
+        android:layout_width="34dp"
+        android:layout_height="41dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <ImageButton
+        android:id="@+id/btnPlusPasta"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.994"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352"
+        app:srcCompat="@drawable/plus_circle" />
+
+    <TextView
+        android:id="@+id/txtCantidadPizza"
+        android:layout_width="34dp"
+        android:layout_height="41dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <ImageButton
+        android:id="@+id/btnMinusPizza"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/minus_circle" />
+
+    <ImageButton
+        android:id="@+id/btnPlusPizza"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:backgroundTint="@color/material_dynamic_neutral95"
+        android:baselineAlignBottom="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/plus_circle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="Menú"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chpGroup"
+        android:layout_width="311dp"
+        android:layout_height="339dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.127">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpRefresco"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="Refresco                                 $15"
+            android:textAlignment="textStart"
+            app:chipBackgroundColor="@android:color/system_accent3_400"
+            app:chipIcon="@drawable/bottle_soda_classic"
+            app:chipIconEnabled="true"
+            app:chipIconSize="50dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpPollo"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="Pollo                                       $90"
+            app:chipBackgroundColor="@android:color/system_accent3_400"
+            app:chipIcon="@drawable/food_drumstick"
+            app:chipIconEnabled="true"
+            app:chipIconSize="50dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpHamburguesa"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="Hamburguesa                        $70"
+            app:chipBackgroundColor="@android:color/system_accent3_400"
+            app:chipIcon="@drawable/hamburger"
+            app:chipIconEnabled="true"
+            app:chipIconSize="50dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpPasta"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="Pasta                                      $85"
+            app:chipBackgroundColor="@android:color/system_accent3_400"
+            app:chipIcon="@drawable/pasta"
+            app:chipIconEnabled="true"
+            app:chipIconSize="50dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chpPizza"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="Pizza                                      $150"
+            app:chipBackgroundColor="@android:color/system_accent3_400"
+            app:chipIcon="@drawable/pizza"
+            app:chipIconEnabled="true"
+            app:chipIconSize="50dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="412dp"
+        android:layout_height="127dp"
+        android:background="@color/material_dynamic_primary90"
+        android:backgroundTint="@color/material_dynamic_tertiary90"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.642" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="418dp"
+        android:layout_height="248dp"
+        android:background="@color/material_dynamic_primary90"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtInstruccionesExtras"
+        android:layout_width="281dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Agregar instrucciones extras"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chpExtras"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_tertiary99"
+        android:backgroundTint="@color/material_dynamic_tertiary99"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.623">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="TOTAL"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <TextView
+        android:id="@+id/txtDetallesTotal"
+        android:layout_width="179dp"
+        android:layout_height="250dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Detalles de la orden:"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="$0.00"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
